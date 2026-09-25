@@ -15,8 +15,7 @@
         background: #231F20;
       }
       /* Fill the whole viewport and reflow on resize / fold / rotate */
-      /* Centre the canvas: it keeps a fixed aspect, so there is spare space
-         on two sides whenever the window does not match that aspect. */
+      /* Keep the Unity canvas centred within the full browser viewport. */
       #unity-container {
         position: fixed;
         inset: 0;
@@ -121,11 +120,11 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/FPVandUAVSimulator[4]-mirraSDK[5.1.9].loader.js";
+      var loaderUrl = buildUrl + "/FPVandUAVSimulator[1]-mirraSDK[5.1.9].loader.js";
       var config = {
-        dataUrl: buildUrl + "/FPVandUAVSimulator[4]-mirraSDK[5.1.9].data.unityweb",
-        frameworkUrl: buildUrl + "/FPVandUAVSimulator[4]-mirraSDK[5.1.9].framework.js.unityweb",
-        codeUrl: buildUrl + "/FPVandUAVSimulator[4]-mirraSDK[5.1.9].wasm.unityweb",
+        dataUrl: buildUrl + "/FPVandUAVSimulator[1]-mirraSDK[5.1.9].data.unityweb",
+        frameworkUrl: buildUrl + "/FPVandUAVSimulator[1]-mirraSDK[5.1.9].framework.js.unityweb",
+        codeUrl: buildUrl + "/FPVandUAVSimulator[1]-mirraSDK[5.1.9].wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "ToxicFamaluGames",
         productName: "FPV and UAV Simulator",
@@ -133,7 +132,7 @@
         showBanner: unityShowBanner,
       };
 
-      // Final responsive mode: allow the Unity canvas to fill the whole available browser area.
+      // Responsive mode: allow the Unity canvas to fill the whole available browser area.
       // The Unity UI handles different aspect ratios responsively.
 
       function availableSize() {
