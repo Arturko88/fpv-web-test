@@ -121,11 +121,11 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/FPVandUAVSimulator[3]-mirraSDK[5.1.9].loader.js";
+      var loaderUrl = buildUrl + "/FPVandUAVSimulator[4]-mirraSDK[5.1.9].loader.js";
       var config = {
-        dataUrl: buildUrl + "/FPVandUAVSimulator[3]-mirraSDK[5.1.9].data.unityweb",
-        frameworkUrl: buildUrl + "/FPVandUAVSimulator[3]-mirraSDK[5.1.9].framework.js.unityweb",
-        codeUrl: buildUrl + "/FPVandUAVSimulator[3]-mirraSDK[5.1.9].wasm.unityweb",
+        dataUrl: buildUrl + "/FPVandUAVSimulator[4]-mirraSDK[5.1.9].data.unityweb",
+        frameworkUrl: buildUrl + "/FPVandUAVSimulator[4]-mirraSDK[5.1.9].framework.js.unityweb",
+        codeUrl: buildUrl + "/FPVandUAVSimulator[4]-mirraSDK[5.1.9].wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "ToxicFamaluGames",
         productName: "FPV and UAV Simulator",
@@ -133,8 +133,8 @@
         showBanner: unityShowBanner,
       };
 
-      // Test mode: allow the Unity canvas to fill the whole available browser area.
-      // The Unity UI itself should handle different aspect ratios responsively.
+      // Final responsive mode: allow the Unity canvas to fill the whole available browser area.
+      // The Unity UI handles different aspect ratios responsively.
 
       function availableSize() {
         // Fullscreen puts the canvas in the top layer, where the container's size no
