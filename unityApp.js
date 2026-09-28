@@ -194,12 +194,12 @@ const unityApp = {
         const progressBarFull = document.querySelector("#unity-progress-bar-full");
 
         const buildUrl = "Build";
-        const loaderUrl = buildUrl + "/FPVandUAVSimulator[1]-mirraSDK[5.1.9].loader.js";
+        const loaderUrl = buildUrl + "/FPVandUAVSimulator[2]-mirraSDK[5.1.9].loader.js";
         const config = {
             arguments: [],
-            dataUrl: buildUrl + "/FPVandUAVSimulator[1]-mirraSDK[5.1.9].data.unityweb",
-            frameworkUrl: buildUrl + "/FPVandUAVSimulator[1]-mirraSDK[5.1.9].framework.js.unityweb",
-            codeUrl: buildUrl + "/FPVandUAVSimulator[1]-mirraSDK[5.1.9].wasm.unityweb",
+            dataUrl: buildUrl + "/FPVandUAVSimulator[2]-mirraSDK[5.1.9].data.unityweb",
+            frameworkUrl: buildUrl + "/FPVandUAVSimulator[2]-mirraSDK[5.1.9].framework.js.unityweb",
+            codeUrl: buildUrl + "/FPVandUAVSimulator[2]-mirraSDK[5.1.9].wasm.unityweb",
             streamingAssetsUrl: "StreamingAssets",
             companyName: "ToxicFamaluGames",
             productName: "FPV and UAV Simulator",
